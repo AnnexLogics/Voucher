@@ -22,6 +22,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
+Route::group(['prefix' => 'admindashboard'],function(){
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -36,3 +37,4 @@ Route::post('/voucher/update',[App\Http\Controllers\VoucherController::class,'up
 Route::get('/voucher/delete/{id}',[\App\Http\Controllers\VoucherController::class,'delete'])->name('voucher.delete');
 
 // Route::get('/voucher/restore/{id}',[\App\Http\Controllers\VoucherController::class,'restore'])->name('voucher.restore');
+});

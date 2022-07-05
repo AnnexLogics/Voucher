@@ -66,7 +66,7 @@
                 });    
             }
             else{
-                imgPreview.innerHTML = '<img src="' + this.result + '" />';
+                imgPreview.innerHTML = '<img src="' + php + '" />';
                     
             }
             }
